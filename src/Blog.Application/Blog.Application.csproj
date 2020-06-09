@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Blog</RootNamespace>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Identity.Application" Version="2.9.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\Blog.Application.Caching\Blog.Application.Caching.csproj" />
+		<ProjectReference Include="..\Blog.Application.Contracts\Blog.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Blog.Domain.Shared\Blog.Domain.Shared.csproj" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="Wallpapers\" />
+	</ItemGroup>
+
+</Project>

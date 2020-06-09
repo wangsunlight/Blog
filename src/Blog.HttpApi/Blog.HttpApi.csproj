@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+	
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<RootNamespace>Blog</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>..\Blog.Web\Blog.HttpApi.xml</DocumentationFile>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Identity.HttpApi" Version="2.9.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Blog.Application\Blog.Application.csproj" />
+	</ItemGroup>
+
+</Project>

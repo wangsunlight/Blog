@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.EntityFrameworkCore.MySQL" Version="2.9.0" />
+		<PackageReference Include="Volo.Abp.EntityFrameworkCore.PostgreSql" Version="2.9.0" />
+		<PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="2.9.0" />
+		<PackageReference Include="Volo.Abp.EntityFrameworkCore.SqlServer" Version="2.9.0" />
+
+		<ProjectReference Include="..\Blog.Domain\Blog.Domain.csproj" />
+	</ItemGroup>
+
+</Project>
