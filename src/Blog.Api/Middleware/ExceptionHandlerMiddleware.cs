@@ -5,7 +5,7 @@ using System;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Blog.Web.Middleware
+namespace Blog.Api.Middleware
 {
     /// <summary>
     /// 异常处理中间件

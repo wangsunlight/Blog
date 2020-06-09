@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Application", "src\Blo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.EntityFrameworkCore", "src\Blog.EntityFrameworkCore\Blog.EntityFrameworkCore.csproj", "{C956DD76-69C8-4A9C-83EA-D17DF83340FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Web", "src\Blog.Web\Blog.Web.csproj", "{068855E8-9240-4F1A-910B-CF825794513B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Api", "src\Blog.Api\Blog.Api.csproj", "{068855E8-9240-4F1A-910B-CF825794513B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CA9AC87F-097E-4F15-8393-4BC07735A5B0}"
 EndProject
@@ -21,13 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Application.Contracts"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.HttpApi", "src\Blog.HttpApi\Blog.HttpApi.csproj", "{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Application.Caching", "src\Blog.Application.Caching\Blog.Application.Caching.csproj", "{A5CB300C-FCD2-41C4-9125-BECB42BF251E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Application.Caching", "src\Blog.Application.Caching\Blog.Application.Caching.csproj", "{A5CB300C-FCD2-41C4-9125-BECB42BF251E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Swagger", "src\Blog.Swagger\Blog.Swagger.csproj", "{055FC096-42DD-4E89-BC5A-7EA637CD0430}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Swagger", "src\Blog.Swagger\Blog.Swagger.csproj", "{055FC096-42DD-4E89-BC5A-7EA637CD0430}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.ToolKits", "src\Blog.ToolKits\Blog.ToolKits.csproj", "{227E9F39-360B-4746-914D-CA0A65E849C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.ToolKits", "src\Blog.ToolKits\Blog.ToolKits.csproj", "{227E9F39-360B-4746-914D-CA0A65E849C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.BackgroundJobs", "src\Blog.BackgroundJobs\Blog.BackgroundJobs.csproj", "{74637E4F-77A6-406E-A6E7-318DEB5F4D9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.BackgroundJobs", "src\Blog.BackgroundJobs\Blog.BackgroundJobs.csproj", "{74637E4F-77A6-406E-A6E7-318DEB5F4D9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Web", "src\Blog.Web\Blog.Web.csproj", "{3A55B140-EBD7-43CC-A7EF-5D5823C2B9B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{74637E4F-77A6-406E-A6E7-318DEB5F4D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74637E4F-77A6-406E-A6E7-318DEB5F4D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74637E4F-77A6-406E-A6E7-318DEB5F4D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A55B140-EBD7-43CC-A7EF-5D5823C2B9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A55B140-EBD7-43CC-A7EF-5D5823C2B9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A55B140-EBD7-43CC-A7EF-5D5823C2B9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A55B140-EBD7-43CC-A7EF-5D5823C2B9B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +106,7 @@ Global
 		{055FC096-42DD-4E89-BC5A-7EA637CD0430} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{227E9F39-360B-4746-914D-CA0A65E849C7} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{74637E4F-77A6-406E-A6E7-318DEB5F4D9C} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{3A55B140-EBD7-43CC-A7EF-5D5823C2B9B6} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}

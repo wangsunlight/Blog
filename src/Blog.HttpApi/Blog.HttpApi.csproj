@@ -8,7 +8,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DocumentationFile>..\Blog.Web\Blog.HttpApi.xml</DocumentationFile>
+		<DocumentationFile>..\Blog.Api\Blog.HttpApi.xml</DocumentationFile>
 	</PropertyGroup>
 	
 	<ItemGroup>

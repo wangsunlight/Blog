@@ -1,12 +1,12 @@
-﻿using Blog.BackgroundJobs;
+﻿using Blog.Api.Filters;
+using Blog.Api.Middleware;
+using Blog.BackgroundJobs;
 using Blog.BackgroundJobs.Jobs.Background;
 using Blog.Domain.Configurations;
 using Blog.EntityFrameworkCore;
 using Blog.Swagger;
 using Blog.ToolKits.Base;
 using Blog.ToolKits.Extensions;
-using Blog.Web.Filters;
-using Blog.Web.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -23,7 +23,7 @@ using Volo.Abp.AspNetCore.Mvc.ExceptionHandling;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 
-namespace Blog.Web
+namespace Blog.Api
 {
     [DependsOn(
        typeof(AbpAspNetCoreMvcModule),

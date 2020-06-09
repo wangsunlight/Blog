@@ -2,7 +2,7 @@
 using log4net;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Blog.Web.Filters
+namespace Blog.Api.Filters
 {
     public class BlogExceptionFilter : IExceptionFilter
     {

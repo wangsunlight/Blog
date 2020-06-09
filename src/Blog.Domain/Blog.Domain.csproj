@@ -7,7 +7,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DocumentationFile>..\Blog.Web\Blog.Domain.xml</DocumentationFile>
+		<DocumentationFile>..\Blog.Api\Blog.Domain.xml</DocumentationFile>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp;
 
-namespace Blog.Web
+namespace Blog.Api
 {
     public class Startup
     {

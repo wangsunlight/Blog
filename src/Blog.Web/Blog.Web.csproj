@@ -1,26 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
-	<Import Project="..\..\common.props" />
-	
-	<PropertyGroup>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
-	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+  </PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
-		<PackageReference Include="Winton.Extensions.Configuration.Consul" Version="3.0.2" />
-		<PackageReference Include="Volo.Abp.Autofac" Version="2.9.0" />
-		
-		<ProjectReference Include="..\Blog.BackgroundJobs\Blog.BackgroundJobs.csproj" />
-		<ProjectReference Include="..\Blog.EntityFrameworkCore\Blog.EntityFrameworkCore.csproj" />
-		<ProjectReference Include="..\Blog.HttpApi\Blog.HttpApi.csproj" />
-		<ProjectReference Include="..\Blog.Swagger\Blog.Swagger.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Update="log4net.config">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0" PrivateAssets="all" />
+    <PackageReference Include="System.Net.Http.Json" Version="3.2.0" />
+  </ItemGroup>
 
 </Project>
