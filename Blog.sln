@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.ToolKits", "src\Blog.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.BackgroundJobs", "src\Blog.BackgroundJobs\Blog.BackgroundJobs.csproj", "{74637E4F-77A6-406E-A6E7-318DEB5F4D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Web", "src\Blog.Web\Blog.Web.csproj", "{3A55B140-EBD7-43CC-A7EF-5D5823C2B9B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Web", "src\Blog.Web\Blog.Web.csproj", "{3A55B140-EBD7-43CC-A7EF-5D5823C2B9B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
