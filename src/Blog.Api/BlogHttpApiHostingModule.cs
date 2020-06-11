@@ -51,7 +51,7 @@ namespace Blog.Api
             // 跨域配置
             context.Services.AddCors(options =>
             {
-                options.AddDefaultPolicy(p => p.AllowAnyOrigin());
+                options.AddDefaultPolicy(p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             });
 
             // 路由配置

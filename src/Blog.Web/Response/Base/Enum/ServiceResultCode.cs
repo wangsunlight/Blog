@@ -1,4 +1,4 @@
-﻿namespace Blog.WebResponse.Base.Enum
+﻿namespace Blog.Web.Response.Base.Enum
 {
     /// <summary>
     /// 服务层响应码枚举

@@ -6,7 +6,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Pages\Admin\Admin.razor" />
+    <None Include="Pages\Admin\Auth.razor" />
+    <None Include="Pages\Admin\Categories.razor" />
+    <None Include="Pages\Admin\Friendlinks.razor" />
+    <None Include="Pages\Admin\Post.razor" />
+    <None Include="Pages\Admin\Posts.razor" />
+    <None Include="Pages\Admin\Tags.razor" />
+    <None Include="Pages\Apps\Apps.razor" />
+    <None Include="Pages\Categories\Categories.razor" />
+    <None Include="Pages\FriendLinks\FriendLinks.razor" />
     <None Include="Pages\Index.razor" />
+    <None Include="Pages\Posts\Post.razor" />
+    <None Include="Pages\Posts\Posts.Category.razor" />
+    <None Include="Pages\Posts\Posts.razor" />
+    <None Include="Pages\Posts\Posts.Tag.razor" />
+    <None Include="Pages\Tags\Tags.razor" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
-﻿using Blog.WebResponse.Base.Paged;
+﻿using Blog.Web.Response.Base.Paged;
 using System.Collections.Generic;
 
-namespace Blog.WebResponse.Base
+namespace Blog.Web.Response.Base
 {
     /// <summary>
     /// 分页响应实体

@@ -1,6 +1,6 @@
-﻿using Blog.WebResponse.Base.Enum;
+﻿using Blog.Web.Response.Base.Enum;
 
-namespace Blog.WebResponse.Base
+namespace Blog.Web.Response.Base
 {
     /// <summary>
     /// 服务层响应实体(泛型)

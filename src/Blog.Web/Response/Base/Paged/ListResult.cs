@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Blog.WebResponse.Base.Paged
+namespace Blog.Web.Response.Base.Paged
 {
     public class ListResult<T> : IListResult<T>
     {

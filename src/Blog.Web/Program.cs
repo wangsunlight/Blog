@@ -15,6 +15,7 @@ namespace Blog.Web
             builder.RootComponents.Add<App>("app");
 
             var baseAddress = "https://localhost";
+            baseAddress = "https://api.meowv.com";
 
             if (builder.HostEnvironment.IsProduction())
                 baseAddress = "https://api.meowv.com";

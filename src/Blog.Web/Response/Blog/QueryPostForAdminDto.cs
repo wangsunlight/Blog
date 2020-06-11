@@ -2,7 +2,7 @@
 
 namespace Blog.Web.Response.Blog
 {
-    public class QueryPostDto
+    public class QueryPostForAdminDto
     {
         /// <summary>
         /// 年份
@@ -12,6 +12,6 @@ namespace Blog.Web.Response.Blog
         /// <summary>
         /// Posts
         /// </summary>
-        public IEnumerable<PostBriefDto> Posts { get; set; }
+        public IEnumerable<PostBriefForAdminDto> Posts { get; set; }
     }
 }

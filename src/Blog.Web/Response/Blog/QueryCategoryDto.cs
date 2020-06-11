@@ -1,4 +1,4 @@
-﻿namespace Blog.WebResponse.Blog
+﻿namespace Blog.Web.Response.Blog
 {
     public class QueryCategoryDto : CategoryDto
     {

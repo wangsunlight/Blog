@@ -1,4 +1,4 @@
-﻿namespace Blog.WebResponse.Base.Paged
+﻿namespace Blog.Web.Response.Base.Paged
 {
     public interface IHasTotalCount
     {

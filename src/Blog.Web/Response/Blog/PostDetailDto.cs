@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Blog.WebResponse.Blog
+namespace Blog.Web.Response.Blog
 {
     public class PostDetailDto
     {
