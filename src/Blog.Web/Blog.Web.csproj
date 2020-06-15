@@ -22,6 +22,9 @@
     <None Include="Pages\Posts\Posts.razor" />
     <None Include="Pages\Posts\Posts.Tag.razor" />
     <None Include="Pages\Tags\Tags.razor" />
+    <None Include="wwwroot\css\fonts\FiraCode-Medium.woff2" />
+    <None Include="wwwroot\js\app.js" />
+    <None Include="wwwroot\js\app.min.js" />
   </ItemGroup>
 
   <ItemGroup>
