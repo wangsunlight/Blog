@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using System;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Blog.Web.Commons
@@ -63,12 +65,17 @@ namespace Blog.Web.Commons
         }
 
         /// <summary>
-        /// 后退
+        /// 切换编辑器主题
         /// </summary>
+        /// <param name="currentTheme"></param>
         /// <returns></returns>
-        public async Task BaskAsync()
+        public async Task SwitchEditorTheme(string currentTheme)
         {
-            await InvokeAsync("window.history.back");
+            var editorTheme = currentTheme == "Light" ? "default" : "dark";
+
+            await SetStorageAsync("editorTheme", editorTheme);
+
+            await InvokeAsync("window.func.switchEditorTheme");
         }
 
         /// <summary>
@@ -77,7 +84,7 @@ namespace Blog.Web.Commons
         /// <param name="uri"></param>
         /// <param name="forceLoad">true，绕过路由刷新页面</param>
         /// <returns></returns>
-        public async Task RenderPage(string url, bool forceLoad = true)
+        public async Task NavigateTo(string url, bool forceLoad = false)
         {
             _navigationManager.NavigateTo(url, forceLoad);
 
@@ -93,6 +100,18 @@ namespace Blog.Web.Commons
             var uri = _navigationManager.ToAbsoluteUri(_navigationManager.Uri);
 
             return await Task.FromResult(uri);
+        }
+
+        /// <summary>
+        /// 将字符串转换为MD5
+        /// </summary>
+        /// <param name="inputStr"></param>
+        /// <returns></returns>
+        public string ToMd5(string inputStr)
+        {
+            using var md5 = MD5.Create();
+            var result = md5.ComputeHash(Encoding.Default.GetBytes(inputStr));
+            return BitConverter.ToString(result).Replace("-", "").ToLower();
         }
     }
 }

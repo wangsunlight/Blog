@@ -14,11 +14,9 @@ namespace Blog.Web
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
 
-            var baseAddress = "https://localhost";
-            baseAddress = "https://api.meowv.com";
+            var baseAddress = "https://api2.meowv.com";
 
-            if (builder.HostEnvironment.IsProduction())
-                baseAddress = "https://api.meowv.com";
+            baseAddress = "https://localhost:44384";
 
             builder.Services.AddTransient(sp => new HttpClient
             {
