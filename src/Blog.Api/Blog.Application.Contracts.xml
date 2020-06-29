@@ -199,6 +199,126 @@
             展示名称
             </summary>
         </member>
+        <member name="P:Blog.Application.Contracts.FM.ChannelDto.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.ChannelDto.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.ChannelDto.Intro">
+            <summary>
+            介绍
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.ChannelDto.Banner">
+            <summary>
+            Banner
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.ChannelDto.Cover">
+            <summary>
+            Cover
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.FMDto.AlbumTitle">
+            <summary>
+            专辑名称
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.FMDto.Artist">
+            <summary>
+            艺术家
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.FMDto.Picture">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.FMDto.Url">
+            <summary>
+            URL
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.FMDto.Sid">
+            <summary>
+            Sid
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.FMDto.Ssid">
+            <summary>
+            Ssid
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.FM.FMDto.Lyric">
+            <summary>
+            歌词
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.AlbumDto.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.AlbumDto.Count">
+            <summary>
+            总数
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.AlbumDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.AlbumDto.ImgUrl">
+            <summary>
+            图片URL
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.AlbumDto.IsPublic">
+            <summary>
+            是否公开
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.ImageDto.ImgUrl">
+            <summary>
+            图片URL
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.ImageDto.Width">
+            <summary>
+            宽
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.ImageDto.Height">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.Params.QueryImagesInput.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Gallery.Params.QueryImagesInput.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.HotNews.HotNewsDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.HotNews.HotNewsDto.Url">
+            <summary>
+            链接
+            </summary>
+        </member>
         <member name="P:Blog.Application.Contracts.HotNews.HotNewsJobItem`1.Result">
             <summary>
             <see cref="P:Blog.Application.Contracts.HotNews.HotNewsJobItem`1.Result"/>
@@ -207,6 +327,16 @@
         <member name="P:Blog.Application.Contracts.HotNews.HotNewsJobItem`1.Source">
             <summary>
             来源
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.HotNews.Params.BulkInsertHotNewsInput.Source">
+            <summary>
+            来源
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.HotNews.Params.BulkInsertHotNewsInput.HotNews">
+            <summary>
+            每日热点列表
             </summary>
         </member>
         <member name="T:Blog.Application.Contracts.PagingInput">
@@ -224,11 +354,81 @@
             限制条数
             </summary>
         </member>
-        <member name="T:Blog.Application.Contracts.Wallpaper.WallpaperJobItem`1">
+        <member name="P:Blog.Application.Contracts.Signature.Params.GenerateSignatureInput.Name">
             <summary>
-            通用的待爬的类
+            名字
             </summary>
-            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Blog.Application.Contracts.Signature.Params.GenerateSignatureInput.Id">
+            <summary>
+            类型Id
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Signature.Params.GenerateSignatureInput.Timestamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Signature.Params.GenerateSignatureInput.Sign">
+            <summary>
+            验签
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Signature.SignatureDto.Name">
+            <summary>
+            名字
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Signature.SignatureDto.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Signature.SignatureDto.Url">
+            <summary>
+            URL
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Signature.SignatureDto.Ip">
+            <summary>
+            IP
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Signature.SignatureDto.CreateTime">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Wallpaper.Params.BulkInsertWallpaperInput.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Wallpaper.Params.BulkInsertWallpaperInput.Wallpapers">
+            <summary>
+            壁纸列表
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Wallpaper.Params.QueryWallpapersInput.Type">
+            <summary>
+            类型
+            <see cref="T:Blog.Domain.Shared.Enum.WallpaperEnum"/>
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Wallpaper.Params.QueryWallpapersInput.Keywords">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Wallpaper.WallpaperDto.Url">
+            <summary>
+            URL
+            </summary>
+        </member>
+        <member name="P:Blog.Application.Contracts.Wallpaper.WallpaperDto.Title">
+            <summary>
+            标题
+            </summary>
         </member>
         <member name="P:Blog.Application.Contracts.Wallpaper.WallpaperJobItem`1.Result">
             <summary>

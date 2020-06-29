@@ -2,10 +2,6 @@
 
 namespace Blog.Application.Contracts.Wallpaper
 {
-    /// <summary>
-    /// 通用的待爬的类
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
     public class WallpaperJobItem<T>
     {
         /// <summary>

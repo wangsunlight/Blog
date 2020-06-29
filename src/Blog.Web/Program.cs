@@ -16,7 +16,7 @@ namespace Blog.Web
 
             var baseAddress = "https://api2.meowv.com";
 
-            baseAddress = "https://localhost:44384";
+            baseAddress = "https://localhost";
 
             builder.Services.AddTransient(sp => new HttpClient
             {

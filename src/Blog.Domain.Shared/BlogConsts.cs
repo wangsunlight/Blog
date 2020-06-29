@@ -11,6 +11,11 @@
         public const string DbTablePrefix = "zy_";
 
         /// <summary>
+        /// 语音合成欢迎词
+        /// </summary>
+        public const string GreetWord = "欢迎来到我的个人博客，我是朝阳Plus。今日语录：{0}，{1}";
+
+        /// <summary>
         /// 分组
         /// </summary>
         public static class Grouping

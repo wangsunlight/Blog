@@ -1,0 +1,60 @@
+﻿using Blog.Application.Contracts.Wallpaper;
+using Blog.Application.Contracts.Wallpaper.Params;
+using Blog.Application.Wallpaper;
+using Blog.ToolKits.Base;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Volo.Abp.AspNetCore.Mvc;
+using static Blog.Domain.Shared.BlogConsts;
+
+namespace Blog.HttpApi.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    [ApiExplorerSettings(GroupName = Grouping.GroupName_v3)]
+    public class WallpaperController : AbpController
+    {
+        private readonly IWallpaperService _wallpaperService;
+
+        public WallpaperController(IWallpaperService wallpaperService)
+        {
+            _wallpaperService = wallpaperService;
+        }
+
+        /// <summary>
+        /// 获取所有壁纸类型
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("types")]
+        public async Task<ServiceResult<IEnumerable<EnumResponse>>> GetWallpaperTypesAsync()
+        {
+            return await _wallpaperService.GetWallpaperTypesAsync();
+        }
+
+        /// <summary>
+        /// 分页查询壁纸
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ServiceResult<PagedList<WallpaperDto>>> QueryWallpapersAsync([FromQuery] QueryWallpapersInput input)
+        {
+            return await _wallpaperService.QueryWallpapersAsync(input);
+        }
+
+        /// <summary>
+        /// 批量插入壁纸
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Authorize]
+        public async Task<ServiceResult<string>> BulkInsertWallpaperAsync([FromBody] BulkInsertWallpaperInput input)
+        {
+            return await _wallpaperService.BulkInsertWallpaperAsync(input);
+        }
+    }
+}

@@ -1,6 +1,4 @@
-﻿using Blog.Domain.Configurations;
-
-namespace Blog.Domain.Configurations
+﻿namespace Blog.Domain.Configurations
 {
     public class GitHubConfig
     {

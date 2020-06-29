@@ -42,6 +42,11 @@ namespace Blog.Domain.Configurations
         public static string ApiVersion => _config["ApiVersion"];
 
         /// <summary>
+        /// 监听端口
+        /// </summary>
+        public static string ListenPort => _config["listenPort"];
+
+        /// <summary>
         /// Caching
         /// </summary>
         public static class Caching
@@ -50,6 +55,11 @@ namespace Blog.Domain.Configurations
             /// RedisConnectionString
             /// </summary>
             public static string RedisConnectionString => _config["Caching:RedisConnectionString"];
+
+            /// <summary>
+            /// 是否开启
+            /// </summary>
+            public static bool IsOpen => Convert.ToBoolean(_config["Caching:IsOpen"]);
         }
 
         /// <summary>
@@ -88,6 +98,91 @@ namespace Blog.Domain.Configurations
             public static string Login => _config["Hangfire:Login"];
 
             public static string Password => _config["Hangfire:Password"];
+        }
+
+        /// <summary>
+        /// MTA
+        /// </summary>
+        public static class MTA
+        {
+            public static string App_Id => _config["MTA:App_Id"];
+
+            public static string SECRET_KEY => _config["MTA:SECRET_KEY"];
+        }
+
+        /// <summary>
+        /// 个性签名配置
+        /// </summary>
+        public static class Signature
+        {
+            public static string Path => _config["Signature:Path"];
+
+            public static IDictionary<string, string> Urls
+            {
+                get
+                {
+                    var dic = new Dictionary<string, string>();
+
+                    var urls = _config.GetSection("Signature:Urls");
+                    foreach (IConfigurationSection section in urls.GetChildren())
+                    {
+                        var url = section["Url"];
+                        var parameter = section["Parameter"];
+
+                        dic.Add(url, parameter);
+                    }
+                    return dic;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 百度AI 语音合成
+        /// </summary>
+        public static class BaiduAI
+        {
+            public static string APIKey => _config["BaiduAI:APIKey"];
+
+            public static string SecretKey => _config["BaiduAI:SecretKey"];
+        }
+
+        /// <summary>
+        /// 腾讯云API
+        /// </summary>
+        public static class TencentCloud
+        {
+            public static string SecretId => _config["TencentCloud:SecretId"];
+
+            public static string SecretKey => _config["TencentCloud:SecretKey"];
+
+            public static class Captcha
+            {
+                public static string APIKey => _config["TencentCloud:Captcha:AppId"];
+
+                public static string SecretKey => _config["TencentCloud:Captcha:AppSecret"];
+            }
+        }
+
+        /// <summary>
+        /// RemoveBg
+        /// </summary>
+        public static class RemoveBg
+        {
+            public static string Secret => _config["RemoveBg:Secret"];
+
+            public static string URL => _config["RemoveBg:URL"];
+        }
+
+        /// <summary>
+        /// FM Api
+        /// </summary>
+        public static class FMApi
+        {
+            public static string Channels => _config["FMApi:Channels"];
+
+            public static string Song => _config["FMApi:Song"];
+
+            public static string Lyric => _config["FMApi:Lyric"];
         }
 
         /// <summary>
